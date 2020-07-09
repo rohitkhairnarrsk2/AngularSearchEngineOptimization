@@ -13,7 +13,7 @@ import { LanderPageComponent } from './lander-page/lander-page.component';
     LanderPageComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
     SharedModule
